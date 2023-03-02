@@ -7,7 +7,7 @@ const products = [
         'brand':'Apple',
         'ctegory':'Electron',
         'price':124,
-        'countInStock':0,
+        'countInStock':10,
         'rating':4,
         'numReviews':12
     },
@@ -19,7 +19,7 @@ const products = [
         'brand':'Apple',
         'ctegory':'Electron',
         'price':124,
-        'countInStock':0,
+        'countInStock':50,
         'rating':4,
         'numReviews':12
     },
