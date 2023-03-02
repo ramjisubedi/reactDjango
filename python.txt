@@ -1,0 +1,91 @@
+#crete virtual env
+mkvirtualenv <envname>
+
+#list virtual env
+lsvirtualenv
+
+#workon <envname> env
+workon <envname>
+
+#install requirement in wagtail
+pip install -r requirements.txt
+
+#install django
+pip install django
+
+#to view install sdk
+pip freeze
+
+#create new project in django 
+django-admin startproject <projectname>
+
+#create app in django
+python manage.py startapp <appname>
+
+#migrations and migrate
+python manage.py makemigrations <appname>
+python manage.py migrate <appname>
+
+#migrations and migrate app wise
+python manage.py makemigrations <appname>
+python manage.py migrate <appname>
+
+#running server in django
+python manage.py runserver //for default :8080 port
+python manage.py runserver 0.0.0.0:80 // for custom port
+
+
+#create json file
+python manage.py dumpdata > <filename>.json
+
+#create json file appwise
+python manage.py dumpdata <appname> <filename>.json
+
+
+#add json file data
+python manage.py loaddata <filename>.json
+
+#exclude wagtail data in json file
+python manage.py dumpdata --exclude wagtailcore.locale data.json
+
+#Generate UML class diagrams from django models
+pip install django-extensions
+add .. 'django_extensions' to installed_apps
+install Graphviz or Dotplus exe 
+python manage.py graph_models -a -o myapp_models.png
+
+
+
+
+<================== flutter web ===================>
+
+#run flutter web in static port
+flutter run -d chrome --web-port 8080
+
+#run flutter for local testing devices
+cd <project_path>/build/web
+ run "python -m http.server 8000"
+ from your apps build output. It will serve the app on port 8000.
+
+
+<===================== Git cmd ===========================>
+#to check change status
+git status
+
+#to add changes files and folder
+git add .
+
+#to commit message for changes files and folder
+git commit -m "<message>"
+
+#to pull changes of server
+git pull origin <branch_name>
+
+#to push changes in server 
+git push origin <branch_name>
+
+#to create and switch  branch
+git checkout -b <branch_name>
+
+#to switch branch
+git checkout <branch_name>
