@@ -1,5 +1,7 @@
 import React from 'react'
 import Rating from './Rating';
+import { Link } from 'react-router-dom';
+
 
 const Product = ({product}) => {
     console.log(product);
@@ -10,11 +12,18 @@ const Product = ({product}) => {
         
             <img src="http://placehold" alt="" />
             <div className="card-body">
-                <a href={`/product/${product._id}`}>
-                    <div className="card-title">
+                {/* <Link /> */}
+                <Link to={`/product/${product._id}`} >
+                  <div className="card-title">
                         <strong>{product.name}</strong>
                     </div>
-                </a>
+                </Link>
+                <div className="text">
+                    {product.rating} from {product.numReviews} Reviews
+                </div>
+                <h3 className="text">
+                    ${product.price} 
+                </h3>
                 <Rating value={product.rating} text={product.numReviews} color="#cccccc" />
             </div>
         </div>
