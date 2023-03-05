@@ -3,5 +3,6 @@ from app import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('products/', views.getProducts, name='product_list'),
+    path('api/product/', views.getProduct, name='product_list'),
+    path('api/products/<str:pk>', views.getProducts, name='product_details'),
 ]
