@@ -1,7 +1,7 @@
 products = [
     {
         '_id':'1',
-        'name':'Airpods 1',
+        'name':'Airpods 12 sdaf',
         'image':'img',
         'description':'sdfhsdfhsjdhjsdhjksdh fjksdhfjksdhfjksdhfsdfh sd',
         'brand':'Apple',
